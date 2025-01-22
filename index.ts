@@ -45,9 +45,9 @@ console.log(concatStrings('Ciao', 'Ciao')); // 8
 
 // 7) Cos'è un Type Union e come si scrive?
 
-// Il typoe union è una 'concatenazione' di tipi. Il valore dell'oggetto più essere di diversi tipi
-
 // Risposta:
+// Il type union è una 'concatenazione' di tipi. Il valore dell'oggetto più essere di diversi tip
+// Es.
 const typeUnion: string | number = 'Ciao';
 const typeUnion2: string | number = 5;
 
@@ -59,14 +59,14 @@ const NumNullUndefined: number | null | undefined = null;
 // 9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
 
 // Risposta:
-type GiornoSettimana =
-  | 'Lunedì'
-  | 'Martedì'
-  | 'Mercoledì'
-  | 'Giovedì'
-  | 'Venerdì'
-  | 'Sabato'
-  | 'Domenica';
+type DayOfWeek =
+  | 'Monday'
+  | 'Tuesday'
+  | 'Wednesday'
+  | 'Thursday'
+  | 'Friday'
+  | 'Saturday'
+  | 'Sunday';
 
 // 10) Tipizza il seguente array di numeri nei due modi possibili:
 // const numbers = [1, 2, 3]
@@ -184,6 +184,7 @@ interface Generics<A, B> {
 
 interface APIResponse<R> {
   response: boolean;
+  status: number;
   message: string;
   data: R;
 }

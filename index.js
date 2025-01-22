@@ -31,8 +31,9 @@ var concatStrings = function (string, string2) {
 };
 console.log(concatStrings('Ciao', 'Ciao')); // 8
 // 7) Cos'è un Type Union e come si scrive?
-// Il typoe union è una 'concatenazione' di tipi. Il valore dell'oggetto più essere di diversi tipi
 // Risposta:
+// Il type union è una 'concatenazione' di tipi. Il valore dell'oggetto più essere di diversi tip
+// Es.
 var typeUnion = 'Ciao';
 var typeUnion2 = 5;
 // 8) Crea una variabile che possa contenere un numero, null o undefined.
