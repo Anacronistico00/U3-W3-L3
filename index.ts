@@ -183,8 +183,9 @@ interface Generics<A, B> {
 // 20) Crea un'interfaccia generica per una risposta API.
 
 interface APIResponse<R> {
-  response: boolean;
-  status: number;
-  message: string;
-  data: R;
+  id: string;
+  title: string;
+  price: string;
+  imgUrl: string;
+  description: string;
 }
